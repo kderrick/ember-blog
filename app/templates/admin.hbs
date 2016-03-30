@@ -2,5 +2,6 @@
 <ul>
   {{#each model as |post|}}
   <li>{{post.title}} {{post.text}}</li>
+  {{edit-post post=post update="update"}}
   {{/each}}
 </ul>
