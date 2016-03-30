@@ -1,20 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  showPostForm: false,
+  addPostForm: false,
   actions: {
-    updatePostForm() {
-      this.set('showPostForm', true);
+    addPostForm() {
+      this.set('addPostForm', true);
     },
-    update(post) {
+    save() {
       var params = {
         title: this.get('title'),
         author: this.get('author'),
         text: this.get('text'),
         image: this.get('image')
-      };
-      this.set('showPostForm', false);
-      this.sendAction('update', post, params);
+      }
+      this.set('addPostForm', false);
+      this.sendAction('save', params);
     }
   }
 });
