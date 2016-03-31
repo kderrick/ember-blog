@@ -2,7 +2,7 @@
 <ul>
   {{#each model.posts as |post|}}
   <li>{{post.title}} {{post.text}}</li>
-  {{comment-pane comment=post.comments}}
+  {{comment-pane comments=post.comments}}
   {{new-comment post=post saveComment="saveComment"}}
   {{/each}}
 </ul>
