@@ -4,4 +4,5 @@
 <p>
   {{model.text}}
 </p>
-<!-- {{comments-pane}} -->
+{{comment-pane comments=model.comments}}
+{{new-comment post=model saveComment="saveComment"}}
