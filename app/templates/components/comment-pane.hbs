@@ -1,4 +1,5 @@
 {{#each comments as |comment|}}
   <li>{{comment.author}} : {{comment.text}}</li>
   <button {{action 'delete' comment}}>Delete Comment</button>
+  {{update-comment comment=comment update="update"}}
 {{/each}}
