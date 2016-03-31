@@ -1,8 +1,9 @@
 
 <ul>
   {{#each model.posts as |post|}}
-  <li>{{post.title}} {{post.text}}</li>
+  <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
+  <!-- <li>{{post.title}} {{post.text}}</li>
   {{comment-pane comments=post.comments}}
-  {{new-comment post=post saveComment="saveComment"}}
+  {{new-comment post=post saveComment="saveComment"}} -->
   {{/each}}
 </ul>
