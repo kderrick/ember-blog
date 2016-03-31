@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  // sortedComments: Ember.computed.sort('comments', 'timestamp:desc'),
   model() {
     return Ember.RSVP.hash({
       posts: this.store.findAll('post'),

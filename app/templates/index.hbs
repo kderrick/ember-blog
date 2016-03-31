@@ -6,8 +6,8 @@
 </ul>
 
 <h3>Recent Comments</h3>
-<ul>
+<ul id="recentComments">
   {{#each model.comments as |comment|}}
-  <li>{{#link-to 'post' comment.post.id}}{{comment.author}}: {{comment.text}}{{/link-to}}</li>
+    <li>{{#link-to 'post' comment.post.id}}{{comment.author}}: {{comment.text}} on {{comment.post.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
