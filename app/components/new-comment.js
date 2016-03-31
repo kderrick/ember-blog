@@ -17,6 +17,8 @@ export default Ember.Component.extend({
         timestamp: number
       };
       this.set('showCommentForm', false);
+      this.set('author', "");
+      this.set('text', "");
       this.sendAction('saveComment', params);
       number++;
     }

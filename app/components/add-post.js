@@ -14,6 +14,10 @@ export default Ember.Component.extend({
         image: this.get('image')
       };
       this.set('addPostForm', false);
+      this.set('author', "");
+      this.set('text', "");
+      this.set('image', "");
+      this.set('title', "");
       this.sendAction('save', params);
     }
   }
