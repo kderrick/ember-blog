@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         text: this.get('text'),
         image: this.get('image')
-      }
+      };
       this.set('addPostForm', false);
       this.sendAction('save', params);
     }
