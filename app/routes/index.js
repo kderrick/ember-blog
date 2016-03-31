@@ -7,5 +7,11 @@ export default Ember.Route.extend({
       comments: this.store.findAll('comment')
     });
   }
-
+  // actions: {
+  //   displayComments() {
+  //     for (var i = 0; i = comments.length; i++) {
+  //
+  //     }
+  //   }
+  // }
 });

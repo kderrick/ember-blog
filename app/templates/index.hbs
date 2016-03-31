@@ -1,6 +1,13 @@
-
+<h3>Posts</h3>
 <ul>
   {{#each model.posts as |post|}}
   <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<h3>Recent Comments</h3>
+<ul>
+  {{#each model.comments as |comment|}}
+  <li>{{#link-to 'post' comment.post.id}}{{comment.author}}: {{comment.text}}{{/link-to}}</li>
   {{/each}}
 </ul>
