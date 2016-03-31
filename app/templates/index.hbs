@@ -1,6 +1,8 @@
 
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
   <li>{{post.title}} {{post.text}}</li>
+  {{comment-pane comment=post.comments}}
+  {{new-comment post=post saveComment="saveComment"}}
   {{/each}}
 </ul>
