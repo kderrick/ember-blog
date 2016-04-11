@@ -1,7 +1,6 @@
 # Ember-blog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application was built as practice using the ember.js framework. It is formated as a basic blog, which allows an unauthenticated admin to add new posts, and unauthenticated users to comment upon aforementioned posts.
 
 ## Prerequisites
 
